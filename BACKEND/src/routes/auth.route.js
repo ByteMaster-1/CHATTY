@@ -13,7 +13,7 @@ router.post("/login",login);
 
 router.post("/logout",logout);
 // add a middleware to protect the route
-router.post("/update-profile",protectRoute, updateProfile);
+router.put("/update-profile",protectRoute, updateProfile);
 
 router.get("/check",protectRoute,checkAuth);
 
